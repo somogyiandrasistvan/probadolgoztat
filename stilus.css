@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+    background-image: url(kepek/black.png);
+}
+main{
+    margin:auto;
+    font-family: Arial, Verdana, Sans-serif;
+    color: beige;
+    font-size: 10px;
+    width: 90%;
+    max-width: 900px;
+    background-color: rgb(211, 211, 211);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "ar as"
+    "fo fo"
+    ;
+
+}
+header{
+    background-image: url(kepek/game.jpg);
+    padding-top: 300px;
+    background-size: cover;
+    grid-area: he;
+}
+nav{
+    background-color: black;
+    padding-top: 10px;
+    grid-area: na;
+}
+.menu{
+    list-style-type: none;
+    font-weight: bold;
+}
+article{
+    color: black;
+    padding-left: 10px;
+    grid-area: ar;
+}
+aside{
+    margin-top: 20px;
+    grid-area: as;
+}
+footer{
+    color: black;
+    background-color: orange;
+    text-align: center;
+    grid-area: fo;
+}
